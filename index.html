@@ -48,121 +48,95 @@
     background:radial-gradient(circle, rgba(211,105,126,0.5), transparent 70%);
   }
   .eyebrow{
-    font-size:12px;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--blush);
-    font-weight:600;
-    margin-bottom:10px;
+    font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--blush); font-weight:600; margin-bottom:10px;
   }
-  h1{
-    font-family:'Fraunces', serif;
-    font-weight:500;
-    font-size:30px;
-    line-height:1.15;
-    max-width:480px;
-  }
-  .race-meta{
-    margin-top:16px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
-  }
+  h1{ font-family:'Fraunces', serif; font-weight:500; font-size:30px; line-height:1.15; max-width:480px; }
+  .race-meta{ margin-top:16px; display:flex; flex-wrap:wrap; gap:8px; }
   .chip{
-    background:rgba(255,255,255,0.12);
-    border:1px solid rgba(255,255,255,0.25);
-    border-radius:20px;
-    padding:6px 13px;
-    font-size:12.5px;
+    background:rgba(255,255,255,0.12); border:1px solid rgba(255,255,255,0.25);
+    border-radius:20px; padding:6px 13px; font-size:12.5px;
   }
   #installBar{
-    display:none;
-    margin:16px 24px 0;
-    background:rgba(255,255,255,0.14);
-    border:1px solid rgba(255,255,255,0.3);
-    border-radius:14px;
-    padding:12px 14px;
-    align-items:center;
-    justify-content:space-between;
-    gap:10px;
+    display:none; margin:16px 0 0; background:rgba(255,255,255,0.14);
+    border:1px solid rgba(255,255,255,0.3); border-radius:14px; padding:12px 14px;
+    align-items:center; justify-content:space-between; gap:10px;
   }
   #installBar p{ font-size:12.5px; line-height:1.4; }
   #installBtn{
-    background:var(--cream);
-    color:var(--plum-deep);
-    border:none;
-    border-radius:20px;
-    padding:8px 14px;
-    font-size:12.5px;
-    font-weight:600;
-    white-space:nowrap;
-    cursor:pointer;
+    background:var(--cream); color:var(--plum-deep); border:none; border-radius:20px;
+    padding:8px 14px; font-size:12.5px; font-weight:600; white-space:nowrap; cursor:pointer;
   }
+
+  main{ max-width:660px; margin:0 auto; padding:0 16px; }
 
   .progress-wrap{
-    margin:22px 16px 0;
-    background:#fff;
-    border-radius:18px;
-    padding:20px;
+    margin:22px 0 0; background:#fff; border-radius:18px; padding:20px;
     box-shadow:0 8px 24px -12px rgba(58,24,38,0.25);
   }
-  .progress-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    margin-bottom:12px;
-  }
-  .progress-top .label{
-    font-size:13px;
-    color:#8a6270;
-    text-transform:uppercase;
-    letter-spacing:0.08em;
-    font-weight:600;
-  }
-  .progress-top .count{
-    font-family:'Fraunces', serif;
-    font-size:20px;
-    color:var(--plum);
-  }
-  .roses{ display:flex; gap:6px; }
-  .rose-petal{
-    width:100%;
-    height:14px;
-    border-radius:8px;
-    background:var(--blush);
-    transition: background 0.4s ease;
-  }
+  .progress-top{ display:flex; justify-content:space-between; align-items:baseline; margin-bottom:12px; }
+  .progress-top .label{ font-size:13px; color:#8a6270; text-transform:uppercase; letter-spacing:0.08em; font-weight:600; }
+  .progress-top .count{ font-family:'Fraunces', serif; font-size:20px; color:var(--plum); }
+  .roses{ display:flex; gap:5px; }
+  .rose-petal{ width:100%; height:14px; border-radius:8px; background:var(--blush); transition: background 0.4s ease; }
   .rose-petal.bloomed{ background: linear-gradient(90deg, var(--rose), var(--gold)); }
 
-  main{ max-width:640px; margin:0 auto; padding:0 16px; }
+  .cal-wrap{
+    margin-top:18px; background:#fff; border-radius:18px; padding:18px;
+    box-shadow:0 8px 24px -12px rgba(58,24,38,0.25);
+  }
+  .cal-head{ display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; flex-wrap:wrap; gap:8px; }
+  .cal-title{ font-family:'Fraunces', serif; font-size:17px; color:var(--plum); }
+  .cal-start{ display:flex; align-items:center; gap:8px; font-size:12px; color:#9a7683; }
+  .cal-start input{
+    border:1px solid #e6ccd1; border-radius:8px; padding:5px 8px; font-size:12.5px;
+    font-family:'Work Sans', sans-serif; color:var(--ink);
+  }
+  .cal-legend{ display:flex; flex-wrap:wrap; gap:10px; margin:10px 0 14px; font-size:11.5px; color:#8a6270; }
+  .quickset{ margin:16px 0; padding:14px; background:var(--cream); border-radius:14px; }
+  .quickset-label{ font-size:11px; text-transform:uppercase; letter-spacing:0.06em; font-weight:600; color:var(--rose); margin-bottom:8px; }
+  .quickset-row{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-top:10px; }
+  .time-label{ font-size:12px; color:#8a6270; display:flex; align-items:center; gap:6px; }
+  .time-label input{
+    border:1px solid #e6ccd1; border-radius:8px; padding:5px 8px; font-size:12.5px;
+    font-family:'Work Sans', sans-serif; color:var(--ink);
+  }
+  .apply-btn{
+    background:var(--rose); color:#fff; border:none; border-radius:20px;
+    padding:9px 16px; font-size:12.5px; font-weight:600; cursor:pointer;
+  }
+  .export-btn{
+    display:block; width:100%; margin-top:14px; background:var(--plum); color:#fff;
+    border:none; border-radius:14px; padding:13px; font-size:13.5px; font-weight:600; cursor:pointer;
+  }
+  .month-block{ margin-top:10px; }
+  .month-name{ font-size:12.5px; font-weight:600; color:var(--plum); text-transform:capitalize; margin-bottom:6px; }
+  .cal-grid{ display:grid; grid-template-columns:repeat(7, 1fr); gap:4px; }
+  .cal-dow{ font-size:10px; text-align:center; color:#b48d97; font-weight:600; padding-bottom:2px; }
+  .cal-cell{ min-height:44px; border-radius:9px; background:var(--cream); padding:4px 3px; font-size:10px; position:relative; }
+  .cal-cell.empty{ background:transparent; }
+  .cal-cell.today{ box-shadow:inset 0 0 0 2px var(--rose); }
+  .cal-daynum{ font-size:10px; color:#a17d88; font-weight:600; }
+  .cal-icons{ display:flex; flex-wrap:wrap; gap:1px; margin-top:3px; font-size:11px; line-height:1; }
+
   .week-card{
-    background:#fff;
-    border-radius:18px;
-    margin-top:20px;
-    padding:18px 16px;
+    background:#fff; border-radius:18px; margin-top:20px; padding:18px 16px;
     box-shadow:0 6px 18px -12px rgba(58,24,38,0.2);
-    border-left:4px solid var(--blush);
-    transition: border-color 0.4s ease;
+    border-left:4px solid var(--blush); transition: border-color 0.4s ease;
   }
   .week-card.complete{ border-left:4px solid var(--rose); }
   .week-head{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:2px; }
   .week-title{ font-family:'Fraunces', serif; font-size:18px; color:var(--plum); }
   .week-sub{ font-size:12.5px; color:#9a7683; margin-top:2px; }
+  .week-dates{ font-size:11px; color:#c398a3; margin-top:2px; }
   .week-badge{
     font-size:11px; padding:4px 10px; border-radius:12px;
     background:var(--cream); color:var(--plum); font-weight:600; white-space:nowrap;
   }
   .sessions{ margin-top:12px; display:flex; flex-direction:column; gap:8px; }
-  .session{
-    border-radius:12px;
-    background:var(--cream);
-    overflow:hidden;
-  }
+  .session{ border-radius:12px; background:var(--cream); overflow:hidden; }
   .session.done{ background:#FDECEE; }
-  .session-row{
-    display:flex; align-items:flex-start; gap:11px;
-    padding:11px 12px; cursor:pointer; user-select:none;
-  }
+  .session-row{ display:flex; align-items:flex-start; gap:11px; padding:11px 12px; cursor:pointer; user-select:none; }
   .check{
     width:20px; height:20px; min-width:20px; border-radius:50%;
     border:2px solid var(--rose); display:flex; align-items:center; justify-content:center; margin-top:2px;
@@ -171,23 +145,15 @@
   .session.done .check{ background:var(--rose); }
   .session.done .check svg{ opacity:1; }
   .session-icon{ font-size:15px; min-width:20px; text-align:center; margin-top:1px; }
-  .session-main{ flex:1; }
-  .session-top{ display:flex; justify-content:space-between; align-items:center; gap:8px; }
+  .session-main{ flex:1; min-width:0; }
+  .session-top{ display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap; }
   .session-type{ font-weight:600; color:var(--plum); font-size:14px; }
   .session.done .session-type{ text-decoration:line-through; opacity:0.55; }
-  .session-duration{ font-size:11.5px; color:#9a7683; white-space:nowrap; }
+  .session-meta{ font-size:11px; color:#9a7683; white-space:nowrap; display:flex; gap:6px; align-items:center; }
   .chevron{ font-size:11px; color:#c398a3; margin-left:4px; transition:transform 0.25s ease; display:inline-block; }
   .session.expanded .chevron{ transform:rotate(180deg); }
-  .session-detail{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height 0.3s ease;
-    padding:0 12px;
-  }
-  .session.expanded .session-detail{
-    max-height:600px;
-    padding:0 12px 14px 43px;
-  }
+  .session-detail{ max-height:0; overflow:hidden; transition:max-height 0.35s ease; padding:0 12px; }
+  .session.expanded .session-detail{ max-height:700px; padding:0 12px 14px 43px; }
   .detail-block{ margin-top:8px; font-size:13px; line-height:1.55; }
   .detail-label{
     font-size:10.5px; text-transform:uppercase; letter-spacing:0.06em;
@@ -197,19 +163,21 @@
     margin-top:10px; font-size:12.5px; color:#7a5762; font-style:italic;
     border-left:2px solid var(--gold); padding-left:8px;
   }
-
-  footer{
-    max-width:640px; margin:30px auto 0; padding:0 20px 10px;
-    font-size:12.5px; color:#9a7683; line-height:1.6;
+  .day-picker{ display:flex; gap:5px; margin-top:12px; flex-wrap:wrap; }
+  .day-picker-label{ width:100%; font-size:10.5px; text-transform:uppercase; letter-spacing:0.06em; font-weight:600; color:var(--rose); margin-bottom:2px; }
+  .day-chip{
+    font-size:11px; padding:5px 9px; border-radius:8px; border:1px solid #e6ccd1;
+    background:#fff; color:#9a7683; cursor:pointer;
   }
+  .day-chip.active{ background:var(--rose); border-color:var(--rose); color:#fff; font-weight:600; }
+
+  footer{ max-width:660px; margin:30px auto 0; padding:0 20px 10px; font-size:12.5px; color:#9a7683; line-height:1.6; }
   .reset-btn{
-    display:block; margin:26px auto 0; background:none;
-    border:1px solid #d8bcc3; color:#9a7683; font-size:12px;
-    padding:8px 16px; border-radius:20px; cursor:pointer;
+    display:block; margin:26px auto 0; background:none; border:1px solid #d8bcc3;
+    color:#9a7683; font-size:12px; padding:8px 16px; border-radius:20px; cursor:pointer;
   }
   .offline-badge{
-    display:none;
-    position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
+    display:none; position:fixed; bottom:16px; left:50%; transform:translateX(-50%);
     background:var(--plum-deep); color:var(--cream); font-size:12px;
     padding:8px 16px; border-radius:20px; z-index:50;
   }
@@ -231,210 +199,287 @@
   </div>
 </header>
 
-<div class="progress-wrap">
-  <div class="progress-top">
-    <span class="label">Progression</span>
-    <span class="count" id="progressCount">0 / 27 séances</span>
+<main>
+  <div class="progress-wrap">
+    <div class="progress-top">
+      <span class="label">Progression</span>
+      <span class="count" id="progressCount">0 / 0 séances</span>
+    </div>
+    <div class="roses" id="roseTrack"></div>
   </div>
-  <div class="roses" id="roseTrack"></div>
-</div>
 
-<main id="weeksContainer"></main>
+  <div class="cal-wrap">
+    <div class="cal-head">
+      <div class="cal-title">📆 Ton calendrier</div>
+      <div class="cal-start">
+        Semaine 1 débute le
+        <input type="date" id="startDateInput">
+      </div>
+    </div>
+    <div class="cal-legend">
+      <span>🏊 Natation</span><span>🚴 Vélo</span><span>🏃 Course</span><span>💪 Renforcement</span><span>🔁 Brick</span>
+    </div>
 
-<button class="reset-btn" id="resetBtn">Réinitialiser ma progression</button>
+    <div class="quickset">
+      <div class="quickset-label">Tes jours d'entraînement habituels</div>
+      <div class="day-picker" id="trainingDaysPicker"></div>
+      <div class="quickset-row">
+        <label class="time-label">Heure habituelle
+          <input type="time" id="trainingTimeInput">
+        </label>
+        <button class="apply-btn" id="applyDaysBtn">Répartir mes séances sur ces jours</button>
+      </div>
+    </div>
+
+    <div id="calendarContainer"></div>
+
+    <button class="export-btn" id="exportIcsBtn">📤 Ajouter tout à mon agenda (.ics)</button>
+  </div>
+
+  <div id="weeksContainer"></div>
+
+  <button class="reset-btn" id="resetBtn">Réinitialiser ma progression</button>
+</main>
 
 <footer>
-  Plan conçu pour un niveau débutant, 3–4 séances/semaine. Zone 2 = allure où tu peux encore parler.
+  Plan conçu pour un niveau débutant, 4 séances/semaine (3 en semaine de récup). Échelle d'effort utilisée : <b>facile</b>
+  (tu peux chanter), <b>modéré</b> (tu peux parler par phrases courtes), <b>soutenu</b> (quelques mots seulement).
   Ce bloc de 8 semaines construit ta base ; il te restera quelques semaines d'ajustement avant le 19 septembre.
-  Mieux vaut une séance raccourcie que sautée. Ta progression est sauvegardée sur cet appareil, et l'appli
-  fonctionne aussi hors-ligne une fois installée.
+  Tape sur une séance pour voir le détail et choisir son jour. Tout est sauvegardé sur cet appareil.
 </footer>
 
 <div class="offline-badge" id="offlineBadge">📡 Mode hors-ligne</div>
 
 <script>
+// day index: 0=Lun .. 6=Dim
 const plan = [
 {
-  week:1, title:"Semaine 1 — Prise de contact", sub:"On pose les bases, tranquillement",
+  week:1, title:"Semaine 1 — Fondations", sub:"On pose les bases, tranquillement",
   sessions:[
-    { icon:"🏊", type:"Natation", duration:"20 min",
+    { icon:"🏊", type:"Natation", duration:"20 min", day:0,
       warmup:"4×25m crawl souple, 30s de repos entre chaque longueur.",
       main:"6×25m avec pull-buoy, focus sur la rotation du corps (20s repos) — puis 4×25m battements de jambes avec planche, tête relâchée.",
       cooldown:"100m dos ou brasse très tranquille, en te concentrant sur la respiration.",
       tip:"Expire sous l'eau en continu, ne bloque jamais ta respiration : ça évite l'essoufflement." },
-    { icon:"🚴", type:"Vélo", duration:"25 min",
+    { icon:"🚴", type:"Vélo", duration:"30 min", day:2,
       warmup:"5 min à allure très facile, cadence libre.",
-      main:"15 min allure confortable (zone 2 — tu dois pouvoir parler), cadence 80–90 tours/min.",
+      main:"20 min allure facile-modérée (zone où tu peux parler), cadence 80–90 tours/min.",
       cooldown:"5 min très facile, jambes légères.",
       tip:"Vérifie que ta selle est à hauteur de hanche : genou presque tendu en bas du pédalage." },
-    { icon:"🏃", type:"Course à pied", duration:"20 min",
+    { icon:"🏃", type:"Course à pied", duration:"22 min", day:4,
       warmup:"3 min de marche pour activer les jambes.",
       main:"5 répétitions de : 1 min course facile / 2 min marche.",
       cooldown:"2 min de marche + étirements mollets et ischio-jambiers (20s chacun).",
       tip:"L'objectif cette semaine n'est pas la vitesse, c'est de prendre l'habitude." },
+    { icon:"💪", type:"Renforcement", duration:"15 min", day:6,
+      warmup:"—",
+      main:"Gainage planche 3×20s · Squats 2×12 · Pont fessier 2×12, 30s repos entre séries.",
+      cooldown:"Étirements doux.",
+      tip:"Séance courte mais régulière : c'est elle qui protégera tes articulations sur la durée." },
   ]},
 {
-  week:2, title:"Semaine 2 — On installe le rythme", sub:"Un peu plus de volume, même intensité",
+  week:2, title:"Semaine 2 — Construction", sub:"Un peu plus de volume, même intensité",
   sessions:[
-    { icon:"🏊", type:"Natation", duration:"20 min",
+    { icon:"🏊", type:"Natation", duration:"25 min", day:0,
       warmup:"200m mixte, en alternant crawl et dos, allure très facile.",
       main:"10×25m technique crawl (15s repos) avec l'exercice « doigts traînants » : laisse tes doigts frôler la surface pendant le retour de bras.",
       cooldown:"100m libre, facile.",
-      tip:"Si 25m d'affilée est difficile, fais 15m nage + 10m avec la planche, c'est normal en semaine 2." },
-    { icon:"🚴", type:"Vélo", duration:"30 min",
+      tip:"Si 25m d'affilée est difficile, fais 15m nage + 10m avec la planche, c'est normal." },
+    { icon:"🚴", type:"Vélo", duration:"35 min", day:2,
       warmup:"5 min souple.",
-      main:"20 min sur terrain plat avec 2 petites côtes courtes, tu peux te lever en danseuse légèrement sur les côtes.",
+      main:"25 min sur terrain plat avec 2 petites côtes courtes, tu peux te lever en danseuse légèrement.",
       cooldown:"5 min très facile.",
       tip:"En danseuse, garde le buste relâché et laisse le vélo « balancer » sous toi." },
-    { icon:"🏃", type:"Course à pied", duration:"22 min",
+    { icon:"🏃", type:"Course à pied", duration:"25 min", day:4,
       warmup:"3 min de marche.",
       main:"6 répétitions de : 2 min course / 1 min marche.",
       cooldown:"3 min de marche.",
       tip:"Si les 2 min de course sont trop dures, garde 1min30 — l'important est la régularité." },
+    { icon:"💪", type:"Renforcement", duration:"15 min", day:6,
+      warmup:"—",
+      main:"Gainage planche 3×25s · Squats 2×15 · Fentes 2×8/jambe · Pont fessier 2×15.",
+      cooldown:"Étirements quadriceps.",
+      tip:"Concentre-toi sur la qualité du mouvement plutôt que la vitesse d'exécution." },
   ]},
 {
   week:3, title:"Semaine 3 — Continuité", sub:"Premier 200m sans s'arrêter",
   sessions:[
-    { icon:"🏊", type:"Natation", duration:"20 min",
+    { icon:"🏊", type:"Natation", duration:"25 min", day:0,
       warmup:"200m mixte facile.",
-      main:"Essaie 200m en continu sans t'arrêter (ta première distance de course !), à ton rythme, peu importe le temps — puis 4×25m technique respiration bilatérale (respire tous les 3 mouvements de bras).",
+      main:"Essaie 200m en continu sans t'arrêter (ta première distance de course !), à ton rythme — puis 4×25m technique respiration bilatérale (respire tous les 3 mouvements de bras).",
       cooldown:"100m très facile.",
       tip:"Si tu dois t'arrêter une fois pendant les 200m, ce n'est pas grave : réessaie la semaine prochaine." },
-    { icon:"🚴", type:"Vélo", duration:"35 min",
+    { icon:"🚴", type:"Vélo", duration:"40 min", day:2,
       warmup:"5 min souple.",
-      main:"25 min allure régulière en zone 2, sans à-coups.",
+      main:"30 min allure régulière et modérée, sans à-coups.",
       cooldown:"5 min très facile.",
       tip:"Bois un peu toutes les 10-15 min, même sur une sortie courte : prends l'habitude." },
-    { icon:"🏃", type:"Course à pied", duration:"25 min",
+    { icon:"🏃", type:"Course à pied", duration:"28 min", day:4,
       warmup:"5 min facile en progressif (de très lent à confortable).",
-      main:"15 min de course continue à allure confortable, sans marche.",
+      main:"18 min de course continue à allure confortable, sans marche.",
       cooldown:"5 min de marche + étirements.",
       tip:"Allure confortable = tu pourrais tenir une conversation en phrases courtes." },
+    { icon:"💪", type:"Renforcement", duration:"20 min", day:6,
+      warmup:"—",
+      main:"Gainage planche 3×30s · Squats 3×15 · Fentes 3×10/jambe · Pont fessier 3×15.",
+      cooldown:"Étirements complets.",
+      tip:"Tu peux enchaîner ces exercices en circuit, avec 30-45s de repos entre chaque." },
   ]},
 {
   week:4, title:"Semaine 4 — Récupération", sub:"On lève le pied, c'est voulu et nécessaire",
   sessions:[
-    { icon:"🏊", type:"Natation", duration:"15 min",
+    { icon:"🏊", type:"Natation", duration:"15 min", day:0,
       warmup:"—",
       main:"300m libre à allure très détendue, en te concentrant uniquement sur la glisse et le relâchement, sans chrono.",
       cooldown:"Sors dès que tu sens la fatigue, pas besoin d'insister.",
       tip:"Cette semaine plus légère permet à ton corps d'absorber les 3 dernières semaines." },
-    { icon:"🚴", type:"Vélo", duration:"20 min",
+    { icon:"🚴", type:"Vélo", duration:"25 min", day:2,
       warmup:"—",
-      main:"20 min balade très facile, profite du parcours, cadence libre.",
+      main:"25 min balade très facile, profite du parcours, cadence libre.",
       cooldown:"—",
-      tip:"Si tu as un vélo, découvre un nouvel itinéraire plat pour changer d'air." },
-    { icon:"🏃", type:"Course à pied", duration:"15 min",
+      tip:"Si tu peux, découvre un nouvel itinéraire plat pour changer d'air." },
+    { icon:"🏃", type:"Course à pied", duration:"18 min", day:4,
       warmup:"—",
-      main:"15 min très facile en continu, ou marche active si tu sens la fatigue.",
+      main:"18 min très facile en continu, ou marche active si tu sens la fatigue.",
       cooldown:"Étirements doux.",
       tip:"Une semaine plus légère ne casse pas ta progression, elle la construit." },
   ]},
 {
-  week:5, title:"Semaine 5 — On pousse un peu", sub:"Premiers efforts plus soutenus",
+  week:5, title:"Semaine 5 — Intensité", sub:"Premiers efforts vraiment ciblés",
   sessions:[
-    { icon:"🏊", type:"Natation", duration:"20–25 min",
+    { icon:"🏊", type:"Natation", duration:"25–30 min", day:0,
       warmup:"200m facile.",
       main:"8×25m technique (15s repos) + 2×100m à allure modérée, un peu plus soutenue que ton confort habituel (total ≈350–400m).",
       cooldown:"100m très facile.",
       tip:"Sur les 100m modérés, garde une nage la plus fluide possible même si le rythme monte." },
-    { icon:"🚴", type:"Vélo", duration:"40 min",
+    { icon:"🚴", type:"Vélo", duration:"45 min", day:2,
       warmup:"8 min souple.",
-      main:"2×5 min à allure soutenue (zone 3 — essoufflé mais contrôlé) avec 3 min de récupération facile entre les deux, puis reste du temps à allure modérée.",
+      main:"2×8 min à allure soutenue (essoufflée mais contrôlée) avec 4 min de récupération facile entre les deux, puis reste du temps à allure modérée.",
       cooldown:"5 min très facile.",
-      tip:"Pendant les 5 min soutenues, respire par la bouche si besoin, c'est normal." },
-    { icon:"🏃", type:"Course à pied", duration:"25 min",
+      tip:"Pendant les 8 min soutenues, respire par la bouche si besoin, c'est normal." },
+    { icon:"🏃", type:"Course à pied", duration:"30 min", day:4,
       warmup:"5 min facile.",
-      main:"4 répétitions de : 1 min rapide (mais contrôlé) / 2 min facile.",
-      cooldown:"6 min de marche + étirements.",
-      tip:"« Rapide » = un effort où tu ne pourrais dire que quelques mots, pas un sprint." },
+      main:"5 répétitions de : 1 min soutenu (mais contrôlé) / 2 min facile.",
+      cooldown:"7 min de marche + étirements.",
+      tip:"« Soutenu » = un effort où tu ne pourrais dire que quelques mots, pas un sprint." },
+    { icon:"💪", type:"Renforcement", duration:"20 min", day:6,
+      warmup:"—",
+      main:"Gainage latéral 2×20s/côté · Squats sautés 2×10 · Fentes marchées 2×10/jambe · Pont fessier 3×15.",
+      cooldown:"Étirements complets.",
+      tip:"Les squats sautés restent légers ici — pense contrôle à la réception, pas hauteur." },
   ]},
 {
-  week:6, title:"Semaine 6 — Renforcement", sub:"On ajoute une 4ᵉ séance courte",
+  week:6, title:"Semaine 6 — Volume", sub:"On enchaîne un premier brick léger",
   sessions:[
-    { icon:"🏊", type:"Natation", duration:"25 min",
+    { icon:"🏊", type:"Natation", duration:"30 min", day:0,
       warmup:"200m facile.",
-      main:"6×25m départs dans l'eau (pousse fort sur le mur) + 200m à l'allure prévue pour la course.",
+      main:"6×25m départs dans l'eau (pousse fort sur le mur) + 200m à l'allure prévue pour la course + 4×25m technique.",
       cooldown:"100m très facile.",
       tip:"En course, le départ se fait dans l'eau (pas de plongeon) : entraîne cette poussée de mur." },
-    { icon:"🚴", type:"Vélo", duration:"40–45 min",
+    { icon:"🚴", type:"Vélo", duration:"45–50 min", day:2,
       warmup:"5 min souple.",
-      main:"30–35 min allure régulière et confortable, terrain varié si possible.",
+      main:"35–40 min allure régulière et confortable, terrain varié si possible.",
       cooldown:"5 min très facile.",
       tip:"C'est ta sortie la plus longue jusqu'ici : découpe-la mentalement en 3 tiers." },
-    { icon:"🏃", type:"Course à pied", duration:"28 min",
-      warmup:"5 min facile.",
-      main:"18 min de course continue à allure confortable.",
-      cooldown:"5 min marche + étirements.",
-      tip:"Concentre-toi sur une foulée légère plutôt que sur la vitesse." },
-    { icon:"💪", type:"Renforcement", duration:"20 min",
+    { icon:"🔁", type:"Enchaînement (brick léger)", duration:"25 min", day:4,
       warmup:"—",
-      main:"Gainage planche 3×30s · Squats 3×15 · Fentes 3×10 par jambe · Pont fessier 3×15, avec 30-45s de repos entre les séries.",
+      main:"15 min de vélo enchaînées directement (sans pause) par 10 min de course à pied facile. Prépare tes chaussures de course à côté du vélo.",
+      cooldown:"Marche 2 min.",
+      tip:"Les jambes seront lourdes au début de la course à pied : c'est normal, ça se calme après 2-3 min." },
+    { icon:"💪", type:"Renforcement", duration:"20 min", day:6,
+      warmup:"—",
+      main:"Gainage planche 3×35s · Squats 3×15 · Fentes 3×10/jambe · Pont fessier 3×15 + Superman 2×12.",
       cooldown:"Étirements quadriceps et dos.",
-      tip:"Ce renforcement léger protège tes genoux et ton dos pour les semaines à venir." },
+      tip:"Ce renforcement protège tes genoux et ton dos pour les semaines à venir." },
   ]},
 {
   week:7, title:"Semaine 7 — Simulation", sub:"On répète les transitions, comme le jour J",
   sessions:[
-    { icon:"🏊", type:"Natation", duration:"25 min",
+    { icon:"🏊", type:"Natation", duration:"30 min", day:0,
       warmup:"150m facile.",
-      main:"200m chronométré à effort de course — note ton temps, ça deviendra ton repère pour le 19 septembre !",
+      main:"200m chronométré à effort de course — note ton temps, ça deviendra ton repère pour le 19 septembre ! Puis 4×25m technique de relâchement.",
       cooldown:"200m très facile, retour au calme complet.",
       tip:"Ne panique pas si le temps te semble lent : l'important est de finir en contrôle." },
-    { icon:"🚴", type:"Vélo", duration:"35 min",
+    { icon:"🚴", type:"Vélo", duration:"40 min", day:2,
       warmup:"5 min souple.",
-      main:"25 min à allure moyenne, régulière.",
+      main:"30 min à allure moyenne, régulière.",
       cooldown:"5 min facile.",
       tip:"—" },
-    { icon:"🔁", type:"Enchaînement (brick)", duration:"30 min",
+    { icon:"🔁", type:"Enchaînement (brick complet)", duration:"35 min", day:5,
       warmup:"—",
-      main:"20 min de vélo enchaînées directement (sans pause) par 10 min de course à pied. Prépare tes chaussures de course à côté du vélo pour une transition rapide.",
+      main:"25 min de vélo enchaînées directement (sans pause) par 10 min de course à pied. Simule vraiment la transition : casque, chaussures posées et prêtes, comme le jour de la course.",
       cooldown:"Marche 2-3 min à la fin.",
-      tip:"Les jambes seront lourdes et « en coton » au début de la course : c'est normal, ça se calme après 2-3 min. S'entraîner à cette sensation est tout l'intérêt de la séance." },
-    { icon:"🏃", type:"Course à pied", duration:"20 min",
+      tip:"S'entraîner à la sensation de jambes « en coton » est tout l'intérêt de cette séance." },
+    { icon:"🏃", type:"Course à pied", duration:"20 min", day:6,
       warmup:"—",
-      main:"20 min très facile, en récupération de l'enchaînement.",
+      main:"20 min très facile, en récupération de l'enchaînement de la veille.",
       cooldown:"Étirements complets.",
       tip:"Séance de récupération active — ne cherche pas la performance ici." },
   ]},
 {
-  week:8, title:"Semaine 8 — On consolide", sub:"Fin de ce premier bloc, base posée",
+  week:8, title:"Semaine 8 — Consolidation", sub:"Fin de ce premier bloc, base posée",
   sessions:[
-    { icon:"🏊", type:"Natation", duration:"15 min",
+    { icon:"🏊", type:"Natation", duration:"20 min", day:0,
       warmup:"—",
       main:"200m libre léger, en te remémorant les repères techniques travaillés : rotation du corps, respiration bilatérale, glisse.",
       cooldown:"—",
       tip:"Cette semaine est plus légère : ton corps consolide ce qu'il a appris." },
-    { icon:"🚴", type:"Vélo", duration:"20 min",
+    { icon:"🚴", type:"Vélo", duration:"30 min", day:2,
       warmup:"—",
-      main:"20 min facile, cadence fluide, sans forcer.",
+      main:"30 min facile, cadence fluide, sans forcer.",
       cooldown:"—",
       tip:"—" },
-    { icon:"🏃", type:"Course à pied", duration:"15 min",
+    { icon:"🏃", type:"Course à pied", duration:"20 min", day:4,
       warmup:"5 min facile.",
       main:"2 à 3 accélérations de 20 secondes pour réveiller les jambes, entrecoupées de 2 min facile.",
       cooldown:"Marche + étirements.",
+      tip:"—" },
+    { icon:"💪", type:"Renforcement", duration:"15 min", day:6,
+      warmup:"—",
+      main:"Gainage planche 3×25s · Squats 2×12 · Pont fessier 2×15, en aisance.",
+      cooldown:"Étirements complets.",
       tip:"Bravo — tu termines ce premier bloc de 8 semaines avec une vraie base posée." },
   ]},
 ];
 
-const STORAGE_KEY = "triathlon-roses-progress";
-let state = {};
+const STORAGE_KEY = "triathlon-roses-progress-v2";
+const weekdaysShort = ['Lun','Mar','Mer','Jeu','Ven','Sam','Dim'];
+const monthsShort = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+
+let state = { done:{}, days:{}, startDate:null, trainingDays:[0,2,4,6], trainingTime:"18:00" };
 let expandedId = null;
 
 function sessionId(w, i){ return `w${w}s${i}`; }
 function totalSessions(){ return plan.reduce((sum,w)=>sum+w.sessions.length,0); }
 
+function pad(n){ return n<10 ? '0'+n : ''+n; }
+function toISO(d){ return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`; }
+function addDays(d,n){ const r = new Date(d); r.setDate(r.getDate()+n); return r; }
+function fromISO(iso){ return new Date(iso+'T00:00:00'); }
+
+function defaultStartDate(){
+  const today = new Date();
+  const day = today.getDay();
+  const diff = ((1-day)+7)%7;
+  return toISO(addDays(today, diff));
+}
+
 function loadState(){
   try{
     const raw = localStorage.getItem(STORAGE_KEY);
-    state = raw ? JSON.parse(raw) : {};
-  }catch(e){ state = {}; }
+    if(raw){ state = Object.assign({done:{},days:{},startDate:null,trainingDays:[0,2,4,6],trainingTime:"18:00"}, JSON.parse(raw)); }
+  }catch(e){ /* keep defaults */ }
+  if(!state.startDate) state.startDate = defaultStartDate();
 }
 function saveState(){
   try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
   catch(e){ console.error("Erreur de sauvegarde", e); }
 }
+
+function weekStartDate(weekNum){ return addDays(fromISO(state.startDate), (weekNum-1)*7); }
+function dayForSession(id, defaultDay){ return state.days.hasOwnProperty(id) ? state.days[id] : defaultDay; }
+function sessionDate(weekNum, id, defaultDay){ return addDays(weekStartDate(weekNum), dayForSession(id, defaultDay)); }
+function formatShort(date){ return `${weekdaysShort[(date.getDay()+6)%7]} ${date.getDate()} ${monthsShort[date.getMonth()].slice(0,4)}.`; }
 
 function detailRow(label, text){
   if(!text || text === "—") return "";
@@ -442,10 +487,100 @@ function detailRow(label, text){
 }
 
 function render(){
+  document.getElementById("startDateInput").value = state.startDate;
+  document.getElementById("trainingTimeInput").value = state.trainingTime;
+  renderTrainingDaysPicker();
+  renderWeeks();
+  renderCalendar();
+  updateProgress();
+}
+
+function renderTrainingDaysPicker(){
+  const el = document.getElementById("trainingDaysPicker");
+  el.innerHTML = weekdaysShort.map((lbl, idx)=>{
+    const active = state.trainingDays.includes(idx);
+    return `<button class="day-chip ${active?'active':''}" data-role="traindaytoggle" data-day="${idx}">${lbl}</button>`;
+  }).join("");
+  el.querySelectorAll('[data-role="traindaytoggle"]').forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const day = parseInt(btn.getAttribute("data-day"), 10);
+      if(state.trainingDays.includes(day)){
+        if(state.trainingDays.length > 1){
+          state.trainingDays = state.trainingDays.filter(d=>d!==day);
+        }
+      } else {
+        state.trainingDays.push(day);
+      }
+      saveState();
+      renderTrainingDaysPicker();
+    });
+  });
+}
+
+function parseDurationMinutes(str){
+  const nums = (str.match(/\d+/g) || []).map(Number);
+  if(nums.length === 0) return 30;
+  if(nums.length >= 2) return Math.round((nums[0]+nums[1])/2);
+  return nums[0];
+}
+
+function escapeIcs(text){
+  return String(text).replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\n/g,"\\n");
+}
+
+function exportIcs(){
+  const lines = ["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//TriRoses//FR","CALSCALE:GREGORIAN"];
+  const now = new Date();
+  const dtstamp = `${now.getFullYear()}${pad(now.getMonth()+1)}${pad(now.getDate())}T${pad(now.getHours())}${pad(now.getMinutes())}00`;
+  const [hh, mm] = state.trainingTime.split(":").map(Number);
+  const fmt = (d)=> `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}T${pad(d.getHours())}${pad(d.getMinutes())}00`;
+
+  plan.forEach(w=>{
+    w.sessions.forEach((s,i)=>{
+      const id = sessionId(w.week, i);
+      const baseDate = sessionDate(w.week, id, s.day);
+      const startDt = new Date(baseDate);
+      startDt.setHours(hh, mm, 0, 0);
+      const durationMin = parseDurationMinutes(s.duration);
+      const endDt = new Date(startDt.getTime() + durationMin*60000);
+
+      const descParts = [];
+      if(s.warmup && s.warmup !== "—") descParts.push("Échauffement : " + s.warmup);
+      if(s.main) descParts.push("Corps de séance : " + s.main);
+      if(s.cooldown && s.cooldown !== "—") descParts.push("Retour au calme : " + s.cooldown);
+      if(s.tip && s.tip !== "—") descParts.push("Conseil : " + s.tip);
+
+      lines.push("BEGIN:VEVENT");
+      lines.push(`UID:${id}-${w.week}@tridesroses.app`);
+      lines.push(`DTSTAMP:${dtstamp}`);
+      lines.push(`DTSTART:${fmt(startDt)}`);
+      lines.push(`DTEND:${fmt(endDt)}`);
+      lines.push(`SUMMARY:${escapeIcs(s.icon + " " + s.type + " — " + w.title)}`);
+      lines.push(`DESCRIPTION:${escapeIcs(descParts.join("\n"))}`);
+      lines.push("END:VEVENT");
+    });
+  });
+  lines.push("END:VCALENDAR");
+
+  const icsContent = lines.join("\r\n");
+  const blob = new Blob([icsContent], {type:"text/calendar;charset=utf-8"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "triathlon-des-roses-planning.ics";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+function renderWeeks(){
   const container = document.getElementById("weeksContainer");
   container.innerHTML = "";
   plan.forEach(w=>{
-    const doneCount = w.sessions.filter((_,i)=>state[sessionId(w.week,i)]).length;
+    const doneCount = w.sessions.filter((_,i)=>state.done[sessionId(w.week,i)]).length;
+    const wStart = weekStartDate(w.week);
+    const wEnd = addDays(wStart, 6);
     const card = document.createElement("div");
     card.className = "week-card" + (doneCount===w.sessions.length ? " complete":"");
     card.innerHTML = `
@@ -453,14 +588,17 @@ function render(){
         <div>
           <div class="week-title">${w.title}</div>
           <div class="week-sub">${w.sub}</div>
+          <div class="week-dates">${wStart.getDate()} ${monthsShort[wStart.getMonth()]} – ${wEnd.getDate()} ${monthsShort[wEnd.getMonth()]}</div>
         </div>
         <div class="week-badge">${doneCount}/${w.sessions.length}</div>
       </div>
       <div class="sessions">
         ${w.sessions.map((s,i)=>{
           const id = sessionId(w.week,i);
-          const done = !!state[id];
+          const done = !!state.done[id];
           const expanded = expandedId === id;
+          const chosenDay = dayForSession(id, s.day);
+          const dt = sessionDate(w.week, id, s.day);
           return `
           <div class="session ${done?'done':''} ${expanded?'expanded':''}" data-id="${id}">
             <div class="session-row" data-role="row" data-id="${id}">
@@ -471,7 +609,7 @@ function render(){
               <div class="session-main">
                 <div class="session-top">
                   <span class="session-type">${s.type}<span class="chevron">▾</span></span>
-                  <span class="session-duration">${s.duration}</span>
+                  <span class="session-meta">${formatShort(dt)} · ${s.duration}</span>
                 </div>
               </div>
             </div>
@@ -480,6 +618,10 @@ function render(){
               ${detailRow("Corps de séance", s.main)}
               ${detailRow("Retour au calme", s.cooldown)}
               ${s.tip && s.tip !== "—" ? `<div class="detail-tip">💡 ${s.tip}</div>` : ""}
+              <div class="day-picker">
+                <div class="day-picker-label">Jour de la séance</div>
+                ${weekdaysShort.map((lbl, idx)=>`<button class="day-chip ${idx===chosenDay?'active':''}" data-role="daychip" data-id="${id}" data-day="${idx}">${lbl}</button>`).join("")}
+              </div>
             </div>
           </div>`;
         }).join("")}
@@ -492,7 +634,7 @@ function render(){
     el.addEventListener("click", (e)=>{
       e.stopPropagation();
       const id = el.getAttribute("data-id");
-      state[id] = !state[id];
+      state.done[id] = !state.done[id];
       saveState();
       render();
     });
@@ -504,18 +646,86 @@ function render(){
       render();
     });
   });
+  document.querySelectorAll('[data-role="daychip"]').forEach(el=>{
+    el.addEventListener("click", (e)=>{
+      e.stopPropagation();
+      const id = el.getAttribute("data-id");
+      const day = parseInt(el.getAttribute("data-day"), 10);
+      state.days[id] = day;
+      saveState();
+      render();
+    });
+  });
+}
 
-  updateProgress();
+function collectSessionsByDate(){
+  const map = {};
+  plan.forEach(w=>{
+    w.sessions.forEach((s,i)=>{
+      const id = sessionId(w.week, i);
+      const dt = sessionDate(w.week, id, s.day);
+      const iso = toISO(dt);
+      if(!map[iso]) map[iso] = [];
+      map[iso].push(s.icon);
+    });
+  });
+  return map;
+}
+
+function renderCalendar(){
+  const byDate = collectSessionsByDate();
+  const allDates = Object.keys(byDate).sort();
+  if(allDates.length === 0){ document.getElementById("calendarContainer").innerHTML = ""; return; }
+  const first = fromISO(allDates[0]);
+  const last = fromISO(allDates[allDates.length-1]);
+  const months = [];
+  let cursor = new Date(first.getFullYear(), first.getMonth(), 1);
+  const end = new Date(last.getFullYear(), last.getMonth(), 1);
+  while(cursor <= end){
+    months.push({ year: cursor.getFullYear(), month: cursor.getMonth() });
+    cursor = new Date(cursor.getFullYear(), cursor.getMonth()+1, 1);
+  }
+
+  const todayIso = toISO(new Date());
+  const container = document.getElementById("calendarContainer");
+  container.innerHTML = months.map(({year, month})=>{
+    const firstOfMonth = new Date(year, month, 1);
+    const startWeekday = (firstOfMonth.getDay()+6)%7;
+    const daysInMonth = new Date(year, month+1, 0).getDate();
+    let cells = [];
+    for(let i=0;i<startWeekday;i++) cells.push(null);
+    for(let d=1; d<=daysInMonth; d++) cells.push(d);
+    while(cells.length % 7 !== 0) cells.push(null);
+
+    const cellsHtml = cells.map(d=>{
+      if(d === null) return `<div class="cal-cell empty"></div>`;
+      const iso = `${year}-${pad(month+1)}-${pad(d)}`;
+      const icons = byDate[iso] || [];
+      const isToday = iso === todayIso;
+      return `<div class="cal-cell ${isToday?'today':''}">
+                <div class="cal-daynum">${d}</div>
+                <div class="cal-icons">${icons.join("")}</div>
+              </div>`;
+    }).join("");
+
+    return `<div class="month-block">
+      <div class="month-name">${monthsShort[month]} ${year}</div>
+      <div class="cal-grid">
+        ${weekdaysShort.map(d=>`<div class="cal-dow">${d}</div>`).join("")}
+        ${cellsHtml}
+      </div>
+    </div>`;
+  }).join("");
 }
 
 function updateProgress(){
   const total = totalSessions();
-  const done = Object.values(state).filter(Boolean).length;
+  const done = Object.values(state.done).filter(Boolean).length;
   document.getElementById("progressCount").textContent = `${done} / ${total} séances`;
   const track = document.getElementById("roseTrack");
   track.innerHTML = "";
-  plan.forEach((w, idx)=>{
-    const weekDone = w.sessions.every((_,si)=>state[sessionId(idx+1,si)]);
+  plan.forEach((w)=>{
+    const weekDone = w.sessions.every((_,si)=>state.done[sessionId(w.week,si)]);
     const petal = document.createElement("div");
     petal.className = "rose-petal" + (weekDone ? " bloomed":"");
     track.appendChild(petal);
@@ -523,17 +733,46 @@ function updateProgress(){
 }
 
 document.getElementById("resetBtn").addEventListener("click", ()=>{
-  if(confirm("Réinitialiser toute ta progression ?")){
-    state = {};
+  if(confirm("Réinitialiser toute ta progression (coches et jours choisis) ?")){
+    state.done = {};
+    state.days = {};
     saveState();
     render();
   }
 });
 
+document.getElementById("startDateInput").addEventListener("change", (e)=>{
+  if(e.target.value){
+    state.startDate = e.target.value;
+    saveState();
+    render();
+  }
+});
+
+document.getElementById("trainingTimeInput").addEventListener("change", (e)=>{
+  if(e.target.value){
+    state.trainingTime = e.target.value;
+    saveState();
+  }
+});
+
+document.getElementById("applyDaysBtn").addEventListener("click", ()=>{
+  const sortedDays = [...state.trainingDays].sort((a,b)=>a-b);
+  plan.forEach(w=>{
+    w.sessions.forEach((s,i)=>{
+      const id = sessionId(w.week, i);
+      state.days[id] = sortedDays[i % sortedDays.length];
+    });
+  });
+  saveState();
+  render();
+});
+
+document.getElementById("exportIcsBtn").addEventListener("click", exportIcs);
+
 loadState();
 render();
 
-// --- PWA: install prompt ---
 let deferredPrompt;
 window.addEventListener("beforeinstallprompt", (e)=>{
   e.preventDefault();
@@ -551,14 +790,12 @@ window.addEventListener("appinstalled", ()=>{
   document.getElementById("installBar").style.display = "none";
 });
 
-// --- PWA: service worker registration ---
 if("serviceWorker" in navigator){
   window.addEventListener("load", ()=>{
     navigator.serviceWorker.register("service-worker.js").catch(()=>{});
   });
 }
 
-// --- Offline indicator ---
 function updateOnlineStatus(){
   document.getElementById("offlineBadge").style.display = navigator.onLine ? "none" : "block";
 }
