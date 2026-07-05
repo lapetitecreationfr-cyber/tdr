@@ -1,0 +1,25 @@
+{
+  "name": "Triathlon des Roses — Plan 8 semaines",
+  "short_name": "Tri des Roses",
+  "description": "Plan d'entraînement 8 semaines pour le Triathlon des Roses Paris 2026",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FBF3F1",
+  "theme_color": "#5B2A3A",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
